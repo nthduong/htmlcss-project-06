@@ -285,7 +285,7 @@ a {
 
 .special-item__img {
     width: 74px;
-    height: 74px;
+    height: 80px;
     flex-shrink: 0;
 }
 
@@ -305,4 +305,17 @@ a {
     color: #51586a;
     font-size: 1.8rem;
     line-height: 1.66; /* 166.667% */
+}
+
+.project__img {
+    width: 100%;
+    display: block;
+}
+
+.project__list {
+    gap: 30px 0;
+}
+
+.project {
+    background-color: var(--primary-color);
 }
