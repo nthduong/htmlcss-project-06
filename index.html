@@ -97,12 +97,15 @@
         <!-- css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/grid.css" />
+       
         <link rel="stylesheet" href="./assets/css/style.css" />
+         <link rel="stylesheet" href="./assets/css/responsive.css">
     </head>
-    <body style="height: 10000px">
+    <body >
         <header class="header">
             <!-- header__top pc -->
             <div class="container header-wrap">
+                <!-- header__top pc -->
                 <div class="header__top">
                     <div class="header__inner">
                         <div class="logo-wrap">
@@ -138,7 +141,33 @@
                         </nav>
                     </div>
                 </div>
-
+                <!-- header tab / mobile -->
+                 <div class="header-tb">
+                    <div class="container">
+                        <div class="header-tb__inner">
+                            
+                        <img
+                            src="./assets/img/memoji-header.png"
+                            alt=""
+                            class="header-tb__memoji"
+                        />
+                        <div class="header-tb__group">
+                            <img
+                                src="./assets/img/logo.png"
+                                alt=""
+                                class="logo-tb"
+                            />
+                              <input hidden type="checkbox" id="header__tb-check">
+                            <label for="header__tb-check">
+                                <div class="menu-drawer">
+                                    <img class="menu-drawer__img" src="./assets/img/menu-drawer.svg" alt="">
+                                </div>
+                            </label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="header-tb_line"></div>
+                 </div>
                 <div class="hero">
                     <div class="container">
                         <section class="hero__inner">
@@ -241,19 +270,21 @@
                                 />
                             </div>
                             <!-- item 4 -->
-                            <div class="clients-item">
+                            <div class="clients-item ">
                                 <img
+                                    
                                     src="./assets/img/clients-4.svg"
                                     alt=""
-                                    class="clients-item__img"
+                                    class="clients-item__img "
                                 />
                             </div>
                             <!-- item 5 -->
-                            <div class="clients-item">
+                            <div class="clients-item ">
                                 <img
+                                
                                     src="./assets/img/clients-5.svg"
                                     alt=""
-                                    class="clients-item__img"
+                                    class="clients-item__img "
                                 />
                             </div>
                             <!-- item 6 -->
@@ -301,7 +332,7 @@
                         </div>
                     </div>
 
-                    <div class="row special-margin">
+                    <div class="row special-margin row-col-sm-3">
                         <div class="col-lg-4 col-md-6">
                             <section class="special-item">
                                 <img
@@ -356,13 +387,14 @@
             <section class="project">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col">
+                        <div class="col-lg-5 col">
                             <h2 class="project__heading">
-                                Take a look at my recent projects
+                                Take a look at <br />
+                                my recent projects
                             </h2>
                         </div>
-                        <div class="col-lg-6 col">
-                            <p class="project__heading">
+                        <div class="col-lg-6 col offset-lg-1">
+                            <p class="project__desc">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. In urna, non nisl tincidunt ut
                                 elementum turpis.
@@ -400,8 +432,572 @@
                             />
                         </div>
                     </div>
+
+                    <div class="project_cta-wrap">
+                        <a href="#!" class="btn project_cta">All Projects</a>
+                    </div>
                 </div>
             </section>
+
+            <!-- about -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__header-top">
+                        <div class="about__label-wrap">
+                            <span class="about__label">Hey,,,,It’s Arif</span>
+                            <img
+                                src="./assets/img/about-icon.svg"
+                                alt=""
+                                class="about__label-icon"
+                            />
+                        </div>
+                        <h2 class="section-heading">Interactive Designer</h2>
+                        <p class="section-desc about-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </div>
+                    <div class="about-stats__list">
+                        <div class="about-stats__item">
+                            <span class="about-stats__number"> 08+ </span>
+                            <span class="section-desc"> Years Experience </span>
+                        </div>
+                        <div class="about-stats__item">
+                            <span class="about-stats__number"> 21+ </span>
+                            <span class="section-desc">
+                                Features & Awards
+                            </span>
+                        </div>
+                        <div class="about-stats__item">
+                            <span class="about-stats__number"> 97% </span>
+                            <span class="section-desc"> Clients Rating </span>
+                        </div>
+                    </div>
+                    <div class="about__video">
+                        <video
+                            src="./assets/video/about.mp4"
+                            width="100%"
+                            poster="./assets/img/about-video.png"
+                        ></video>
+                        <img
+                            class="play-video"
+                            src="./assets/img/play-video.png"
+                            alt=""
+                        />
+                        <button class="btn about__video-btn">
+                            Intro Video
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- feedback -->
+            <div class="feedback">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <h2 class="section-heading">What people says</h2>
+                        <p class="section-desc feedback-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <div class="feedback__list">
+                            <!-- item 1 -->
+                            <div class="feedback-item">
+                                <blockquote class="feedback__blockquote">
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+
+                                <div class="feedback__user-wrap">
+                                    <img
+                                        src="./assets/img/user.png"
+                                        alt=""
+                                        class="feedback__user-avar"
+                                    />
+                                    <span class="feedback__user-name">
+                                        Joe Elia
+                                    </span>
+                                </div>
+                                <p class="feedback__user-desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+                            <div class="feedback-item">
+                                <blockquote class="feedback__blockquote">
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+
+                                <div class="feedback__user-wrap">
+                                    <img
+                                        src="./assets/img/user.png"
+                                        alt=""
+                                        class="feedback__user-avar"
+                                    />
+                                    <span class="feedback__user-name">
+                                        Joe Elia 2
+                                    </span>
+                                </div>
+                                <p class="feedback__user-desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+                            <div class="feedback-item">
+                                <blockquote class="feedback__blockquote">
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+
+                                <div class="feedback__user-wrap">
+                                    <img
+                                        src="./assets/img/user.png"
+                                        alt=""
+                                        class="feedback__user-avar"
+                                    />
+                                    <span class="feedback__user-name">
+                                        Joe Elia 3
+                                    </span>
+                                </div>
+                                <p class="feedback__user-desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback__dots">
+                            <div class="feedback__dot"></div>
+                            <div class="feedback__dot"></div>
+                            <div
+                                class="feedback__dot feedback__dot--active"
+                            ></div>
+                            <div class="feedback__dot"></div>
+                            <div class="feedback__dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <img
+                    src="./assets/img/feedback-decor.svg"
+                    alt=""
+                    class="feedback__decor-left"
+                />
+                <img
+                    src="./assets/img/feedback-decor2.svg"
+                    alt=""
+                    class="feedback__decor-right"
+                />
+            </div>
+
+            <!-- question -->
+            <section class="question">
+                <div class="container">
+                    <h2 class="section-heading">
+                        A few questions <br />
+                        clients normally ask me
+                    </h2>
+                    <div class="question__list">
+                        <div class="question-item">
+                            <input
+                                hidden
+                                type="checkbox"
+                                class="question-item-check"
+                                id="question-item-check-1"
+                            />
+                            <label for="question-item-check-1">
+                                <div class="question-item__btn">
+                                    <svg
+                                        class="question-item__img-plus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="question-item__img-minus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#5D3BEE"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </div>
+                            </label>
+                            <div class="question-item__content">
+                                <p class="question-item__title">
+                                    What is your hourly rate?
+                                </p>
+                                <p class="question-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="question-item">
+                            <input
+                                hidden
+                                type="checkbox"
+                                class="question-item-check"
+                                id="question-item-check-2"
+                            />
+                            <label for="question-item-check-2">
+                                <div class="question-item__btn">
+                                    <svg
+                                        class="question-item__img-plus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="question-item__img-minus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#5D3BEE"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </div>
+                            </label>
+                            <div class="question-item__content">
+                                <p class="question-item__title">
+                                    What type of projects do you take on?
+                                </p>
+                                <p class="question-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="question-item">
+                            <input
+                                hidden
+                                type="checkbox"
+                                class="question-item-check"
+                                id="question-item-check-3"
+                            />
+                            <label for="question-item-check-3">
+                                <div class="question-item__btn">
+                                    <svg
+                                        class="question-item__img-plus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="question-item__img-minus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#5D3BEE"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </div>
+                            </label>
+                            <div class="question-item__content">
+                                <p class="question-item__title">
+                                    How do you charge for projects ?
+                                </p>
+                                <p class="question-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="question-item">
+                            <input
+                                hidden
+                                type="checkbox"
+                                class="question-item-check"
+                                id="question-item-check-4"
+                            />
+                            <label for="question-item-check-4">
+                                <div class="question-item__btn">
+                                    <svg
+                                        class="question-item__img-plus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="question-item__img-minus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#5D3BEE"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </div>
+                            </label>
+                            <div class="question-item__content">
+                                <p class="question-item__title">
+                                    What time-zone do you work in?
+                                </p>
+                                <p class="question-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="question-item">
+                            <input
+                                hidden
+                                type="checkbox"
+                                class="question-item-check"
+                                id="question-item-check-5"
+                            />
+                            <label for="question-item-check-5">
+                                <div class="question-item__btn">
+                                    <svg
+                                        class="question-item__img-plus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="#161A1C"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="question-item__img-minus question-item__img"
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="#5D3BEE"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </div>
+                            </label>
+                            <div class="question-item__content">
+                                <p class="question-item__title">
+                                    How often can we communicate?
+                                </p>
+                                <p class="question-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--gally -->
+            <section class="gally">
+                <div class="container">
+                    <div class="gally__top">
+                        <h2 class="section-heading">My atmosphere</h2>
+                        <p class="section-desc gally-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <a href="#!" class="gally__link">@interaction_arif</a>
+                    </div>
+
+                    <div class="row row-col-lg-3 row-col-sm-1 gally-list">
+                        <div class="col">
+                            <img
+                                class="gally__img"
+                                src="./assets/img/gally-1.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                class="gally__img"
+                                src="./assets/img/gally-2.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                class="gally__img"
+                                src="./assets/img/gally-3.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- call -->
+            <section class="call">
+                <div class="call-wrap">
+                    <img
+                        src="./assets/img/call-icon.svg"
+                        alt=""
+                        class="call__icon"
+                    />
+                    <h2 class="section-heading">Got a project? Let’s talk</h2>
+                    <p class="section-desc call-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+                    <a href="#!" class="btn call-cta">Book a Call</a>
+                </div>
+                </div>
+            </section>
+
+        
+            <footer class="footer">
+                    <div class="footer__inner">
+                        <div class="logo-wrap">
+                            <img
+                                src="./assets/img/logo.png"
+                                alt=""
+                                class="logo"
+                            />
+                            <a class="logo-link">hi@arif.interactive</a>
+                        </div>
+
+                        <img
+                            src="./assets/img/memoji-header.png"
+                            alt=""
+                            class="memoji-footer"
+                        />
+
+                        <nav class="navbar">
+                            <ul class="nav-list">
+                                <li>
+                                    <a class="nav-item" href="#!">Projects</a>
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#!">Journey</a>
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#!">Service</a>
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#!">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+              </footer>
+            <div class="footer-line"></div>
+            <div class="footer-copyright">
+               <div class="container">
+                <div class="footer-copyright__inner">
+                     <span class="footer-copyright__content">
+                    ©interactiveArif 2021. All rights reserved.
+                </span>
+                <div class="footer-policy__wrap">
+                    <span class="footer-policy__left">Privacy Policy</span>
+                    <div class="footer-policy__line"></div>
+                    <span class="footer-policy__right">Terms of Conditions</span>
+                </div>
+                </div>
+               </div>
+            </div>
+       
+
+           
         </main>
     </body>
 </html>
