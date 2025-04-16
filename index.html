@@ -123,7 +123,7 @@
                             class="memoji-header"
                         />
 
-                        <nav class="navbar">
+                        <nav class="navbar" id="nav-pc">
                             <ul class="nav-list">
                                 <li>
                                     <a class="nav-item" href="#!">Projects</a>
@@ -156,15 +156,41 @@
                                     alt=""
                                     class="logo-tb"
                                 />
-                                <input type="checkbox" id="header__tb-check" />
-                                <label for="header__tb-check">
-                                    <div class="menu-drawer">
+                                <input
+                                    hidden
+                                    type="checkbox"
+                                    id="header__tb-check"
+                                    class="header__tb-check"
+                                />
+                                <label
+                                    for="header__tb-check"
+                                    class="menu-overlay"
+                                >
+                                </label>
+
+                                <div class="menu-drawer">
+                                    <div class="logo-wrap">
                                         <img
-                                            class="menu-drawer__img"
-                                            src="./assets/img/menu-drawer.svg"
+                                            src="./assets/img/logo.png"
                                             alt=""
+                                            class="logo"
                                         />
+                                        <a class="logo-link"
+                                            >hi@arif.interactive</a
+                                        >
                                     </div>
+                                    <div
+                                        class="menu-drawer__list"
+                                        id="nav-tb"
+                                    ></div>
+                                </div>
+
+                                <label for="header__tb-check">
+                                    <img
+                                        class="menu-drawer__img"
+                                        src="./assets/img/menu-drawer.svg"
+                                        alt=""
+                                    />
                                 </label>
                             </div>
                         </div>
@@ -553,15 +579,18 @@
                     </div>
                     <div class="about__video">
                         <video
+                            id="aboutVideo"
                             src="./assets/video/about.mp4"
                             width="100%"
                             poster="./assets/img/about-video.png"
                         ></video>
-                        <img
-                            class="play-video"
-                            src="./assets/img/play-video.png"
-                            alt=""
-                        />
+                        <button id="playVideo">
+                            <img
+                                class="play-video"
+                                src="./assets/img/play-video.png"
+                                alt=""
+                            />
+                        </button>
                         <button class="btn about__video-btn">
                             Intro Video
                         </button>
@@ -1093,5 +1122,7 @@
                 </div>
             </div>
         </main>
+
+        <script src="./main.js"></script>
     </body>
 </html>

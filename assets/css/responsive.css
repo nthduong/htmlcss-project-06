@@ -15,6 +15,48 @@
         display: none;
     }
 
+    .menu-overlay {
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        padding: 40px 0 0 40px;
+        background-color: #fff;
+        inset: 0 20% 0 0;
+        position: fixed;
+        z-index: 3;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer .nav-list {
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: initial;
+    }
+
+    .menu-drawer .nav-item {
+        width: 100%;
+        padding: 20px 0;
+        display: block;
+    }
+
+    .header__tb-check:checked ~ .menu-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header__tb-check:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
     .header-tb {
         padding-top: 20px;
     }
