@@ -56,11 +56,6 @@ button {
     line-height: var(--height); /* 166.667% */
 }
 
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-}
 /* header */
 
 .header {
@@ -162,7 +157,7 @@ button {
 }
 
 .hero__img-decor {
-    width: 875.635px;
+    width: 979.635px;
     position: absolute;
     flex-shrink: 0;
     bottom: 0;
@@ -329,6 +324,8 @@ button {
 
 .project__img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -354,7 +351,7 @@ button {
     margin-left: 28px;
     width: 370px;
     color: #fff;
-    font-size: 1, 8rem;
+    font-size: 1.8rem;
     line-height: 1.66; /* 166.667% */
 }
 
@@ -412,16 +409,18 @@ button {
 .about-stats__list::before {
     position: absolute;
     content: "";
-    width: 946px;
+    width: 82%;
+    /* max-width: 946px; */
     height: 1px;
     background-color: #080415;
     opacity: 0.2;
-    top: -22px;
+    top: -20px;
 }
 .about-stats__list::after {
     position: absolute;
     content: "";
-    width: 946px;
+    width: 82%;
+    /* max-width: 946px; */
     height: 1px;
     background-color: #080415;
     opacity: 0.2;
@@ -430,6 +429,8 @@ button {
 .about-stats__item {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .about-stats__number {
     color: #080415;
@@ -445,10 +446,11 @@ button {
 
 .about__video {
     margin-top: 90px;
+    left: 50%;
     position: absolute;
     width: 1170px;
     bottom: 0;
-    transform: translateY(50%);
+    transform: translate(-50%, 50%);
     z-index: 1;
 }
 
@@ -549,7 +551,7 @@ button {
     border-radius: 50%;
 }
 
-.feedback__dots {
+.dots {
     display: flex;
     gap: 0 16px;
     margin-top: 40px;
@@ -557,7 +559,7 @@ button {
     align-items: center;
 }
 
-.feedback__dot {
+.dot {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
@@ -565,14 +567,14 @@ button {
     background: rgb(8 4 21 / 20%);
 }
 
-.feedback__dot--active {
+.dot--active {
     position: relative;
     background-color: var(--primary-color);
     width: 12px;
     height: 12px;
 }
 
-.feedback__dot--active::before {
+.dot--active::before {
     top: -4px;
     left: -4px;
     position: absolute;
@@ -593,7 +595,7 @@ button {
 .question__list {
     margin-top: 80px;
     padding-bottom: 5px;
-    width: 1009px;
+    width: 88%;
 }
 
 .question-item {
@@ -620,11 +622,11 @@ button {
 }
 
 .question-item__desc {
-    width: 487px;
+    width: 65%;
     color: #51586a;
     font-size: 1.8rem;
     line-height: 1.66; /* 166.667% */
-    margin-bottom: 15px;
+    margin-bottom: 21px;
     display: none;
     transition: 0.25s;
 }
@@ -685,7 +687,7 @@ button {
 }
 
 .gally-desc {
-    width: 528px;
+    width: 41%;
     margin-top: 20px;
 }
 
@@ -735,7 +737,7 @@ button {
 }
 
 .call-desc {
-    width: 570px;
+    width: 43%;
     margin-top: 20px;
 }
 
