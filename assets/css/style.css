@@ -25,6 +25,7 @@ a {
 button {
     border: none;
     outline: none;
+    background-color: transparent;
 }
 
 .section-heading {
@@ -157,11 +158,11 @@ button {
 }
 
 .hero__img-decor {
-    width: 979.635px;
+    width: 170%;
     position: absolute;
     flex-shrink: 0;
     bottom: 0;
-    left: -213px;
+    left: -170px;
 }
 
 .hero__title {
@@ -452,6 +453,10 @@ button {
     bottom: 0;
     transform: translate(-50%, 50%);
     z-index: 1;
+}
+
+.play-video__img {
+    width: 100%;
 }
 
 .play-video {

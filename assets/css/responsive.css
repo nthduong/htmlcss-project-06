@@ -46,6 +46,8 @@
         width: 100%;
         padding: 20px 0;
         display: block;
+        font-weight: 700;
+        font-size: 2rem;
     }
 
     .header__tb-check:checked ~ .menu-overlay {
@@ -199,8 +201,8 @@
 
     .client__heading {
         text-align: center;
-        font-size: 4.2rem;
-        width: 253px;
+        font-size: 5.6rem;
+        width: 350px;
     }
 
     .client__heading::before {
@@ -222,6 +224,10 @@
         align-items: center;
         justify-content: center;
         row-gap: 25px;
+    }
+
+    .play-video {
+        width: 100px;
     }
 
     .about {
