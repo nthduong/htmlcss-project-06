@@ -120,6 +120,9 @@
         max-width: 100%;
     }
 
+    .hero {
+        height: calc(100% - 106px);
+    }
     .hero__content {
         display: flex;
         flex-direction: column;
@@ -287,9 +290,14 @@
         display: none;
     }
 
+    .header {
+        height: initial;
+    }
+
     .hero {
         margin-top: 50.5px;
         align-items: initial;
+        height: calc(100% - 130.5px);
     }
 
     .project-item__title {
