@@ -99,11 +99,23 @@
         <link rel="stylesheet" href="./assets/css/grid.css" />
 
         <link rel="stylesheet" href="./assets/css/style.css" />
+
         <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <!-- link popzy / tabzy -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/nthduong/popzy@v1.0.0/popzy.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/nthduong/tabzy/tabzy.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/tab.css" />
     </head>
     <body>
         <header class="header">
-            <!-- header__top pc -->
+            <!-- header-->
             <div class="container header-wrap">
                 <!-- header__top pc -->
                 <div class="header__top">
@@ -167,7 +179,7 @@
                                     class="menu-overlay"
                                 >
                                 </label>
-
+                                <!-- menu drawer -->
                                 <div class="menu-drawer">
                                     <div class="logo-wrap">
                                         <img
@@ -623,8 +635,115 @@
                     </div>
 
                     <div class="project_cta-wrap">
-                        <a href="#!" class="btn project_cta">All Projects</a>
+                        <a href="#!" class="btn project_cta" id="project-cta"
+                            >All Projects</a
+                        >
                     </div>
+
+                    <template id="project-tab">
+                        <div class="tabzy">
+                            <ul id="tabs" class="tabs">
+                                <li>
+                                    <a href="#tab-1" class="tab"
+                                        >Wally Website</a
+                                    >
+                                </li>
+                                <li class="tabzy--active">
+                                    <a href="#tab-2" class="tab">Banking App</a>
+                                </li>
+                                <li>
+                                    <a href="#tab-3" class="tab">Web App</a>
+                                </li>
+                                <li>
+                                    <a href="#tab-4" class="tab"
+                                        >Oculus Website</a
+                                    >
+                                </li>
+                            </ul>
+                            <div id="tab-1" class="tab-content">
+                                <div class="tab-content__text">
+                                    <h3 class="tab-content__title">
+                                        Wally Website
+                                    </h3>
+                                    <p class="tab-content__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                </div>
+                                <figure class="tab-content__image">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1642132652798-ae887edb9e9d?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                        class="tab-content__img"
+                                    />
+                                </figure>
+                                <a href="" class="tab-content__link"
+                                    >Case Study</a
+                                >
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                <div class="tab-content__text">
+                                    <h3 class="tab-content__title">
+                                        Banking App
+                                    </h3>
+                                    <p class="tab-content__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                </div>
+                                <figure class="tab-content__image">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1648134859211-4a1b57575f4e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                        class="tab-content__img"
+                                    />
+                                </figure>
+                                <a href="" class="tab-content__link"
+                                    >Case Study</a
+                                >
+                            </div>
+                            <div id="tab-3" class="tab-content">
+                                <div class="tab-content__text">
+                                    <h3 class="tab-content__title">Web App</h3>
+                                    <p class="tab-content__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                </div>
+                                <figure class="tab-content__image">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1648134859182-98df6e93ef58?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                        class="tab-content__img"
+                                    />
+                                </figure>
+                                <a href="" class="tab-content__link"
+                                    >Case Study</a
+                                >
+                            </div>
+                            <div id="tab-4" class="tab-content">
+                                <div class="tab-content__text">
+                                    <h3 class="tab-content__title">
+                                        Oculus Website
+                                    </h3>
+                                    <p class="tab-content__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                </div>
+                                <figure class="tab-content__image">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1648134859177-d549c878346e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                        class="tab-content__img"
+                                    />
+                                </figure>
+                                <a href="" class="tab-content__link"
+                                    >Case Study</a
+                                >
+                            </div>
+                        </div>
+                    </template>
                 </div>
             </section>
 
@@ -1214,7 +1333,9 @@
                 </div>
             </div>
         </main>
-
+        <script src="https://cdn.jsdelivr.net/gh/nthduong/popzy@v1.0.0/popzy.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/nthduong/tabzy/tabzy.min.js"></script> -->
+        <script src="./tabzy.js"></script>
         <script src="./main.js"></script>
     </body>
 </html>

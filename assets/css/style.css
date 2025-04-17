@@ -73,6 +73,10 @@ button {
 
 /* header */
 
+.menu-drawer {
+    overflow: hidden;
+}
+
 .header {
     position: relative;
     height: 100vh;
