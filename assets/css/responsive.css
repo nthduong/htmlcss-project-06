@@ -286,9 +286,33 @@
     .footer-line {
         display: none;
     }
-    .header-wrap {
-        max-width: 100%;
+
+    .hero {
+        margin-top: 50.5px;
+        align-items: initial;
     }
+
+    .project-item__title {
+        font-size: 2.4rem;
+        letter-spacing: -0.96px;
+    }
+
+    .project-item__desc {
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    .project-item__link {
+        margin-top: 4px;
+        font-size: 1.6rem;
+    }
+    .project-item__image {
+        width: 38%;
+    }
+    .project-item__content {
+        width: 62%;
+    }
+
     .hero__title {
         width: 260px;
         font-size: 4.2rem;
