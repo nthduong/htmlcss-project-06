@@ -3,6 +3,11 @@
 ::after {
     box-sizing: border-box;
 }
+
+html,
+body {
+    overflow-x: hidden;
+}
 :root {
     --primary-color: #5d3bee;
 }
@@ -161,6 +166,7 @@ button {
     height: calc(100% - 93px);
     display: flex;
     align-items: end;
+    justify-content: center;
 }
 
 .hero__inner {
